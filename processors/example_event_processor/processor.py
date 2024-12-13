@@ -345,8 +345,15 @@ class ExampleEventProcessor(TransactionsProcessor):
             user_transaction = transaction.user
             aptos_price = self.fetch_token_prices("0x1::aptos_coin::AptosCoin", USDC_ADDRESS, "LIQUIDSWAP", 6, 6)[0]
 
-            fees=float((transaction.info.gas_used)/1000000)*aptos_price # type: ignore
-            # self.logger.info("Processing events")
+            gas_used=float(transaction.info.gas_used)
+            gas_price = float(transaction.user.request.gas_unit_price)
+            fees_usdc = round((gas_used*gas_price / 100_000_000) * aptos_price,5)
+
+
+            self.logger.info(f" \n fees: {fees_usdc} USDC")
+
+
+
             valid_txn = False
             for event_index, event in enumerate(user_transaction.events):
                 
@@ -492,7 +499,7 @@ class ExampleEventProcessor(TransactionsProcessor):
                                     "delta_y":delta_y,
                                     "price_y": price_y,
                                     'decimal_x':decimal_x,
-                                    "fees": fees,
+                                    "fees": fees_usdc,
                                     "tvl": None,
                                 }
                     except Exception as e:

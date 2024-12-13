@@ -57,7 +57,7 @@ if __name__ == "__main__":
     latest_version = fetch_latest_version()
     if latest_version is not None:
         # Update the config with the latest version
-        config.server_config.starting_version = latest_version
+        config.server_config.starting_version = int(latest_version)
         logger.info(f"Updated starting_version to {latest_version}")
     config.server_config.postgres_connection_string=os.getenv("DB_STRING")  # type: ignore
     config.server_config.auth_token=os.getenv("AUTH_TOKEN")  # type: ignore

@@ -2215,5 +2215,77 @@
         "token_type": {
             "type": "0x7f13c17e3b59764b596aeb781be84c3f0d0806b98a4d17bd664deb3f7d74c505::dumdum_coin::DumdumCoin"
         }
+    },
+    {
+        "name": "MOO MOO",
+        "symbol": "MOOMOO",
+        "decimals": 6,
+        "token_type": {
+            "type": "0xc5fbbcc4637aeebb4e732767abee8a21f2b0776f73b73e16ce13e7d31d6700da::MOOMOO::MOOMOO"
+        }
+    },
+    {
+        "name": "Shiro Neko",
+        "symbol": "SHIRO",
+        "decimals": 2,
+        "token_type": {
+            "type": "0x973ba30987054d78a355eaba82090d9fe5a96bfedb5a59670d62818003217a38::SHIRO::SHIRO"
+        }
+    },
+    {
+        "name": "Realis Worlds",
+        "symbol": "REALIS",
+        "decimals": 2,
+        "token_type": {
+            "type": "0x33b1c6589bf1187b9604617344ea22b839432dd23abc77e5195e6b9a7e36d9cb::REALIS::REALIS"
+        }
+    },
+    {
+        "name": "Sui",
+        "symbol": "SUI",
+        "decimals": 8,
+        "token_type": {
+            "type": "0xa72a97e872be9ee3d2f14d56fd511eb7e4a53f4055be3a267d8602e7685b41c0::coin::T"
+        }
+    },
+    {
+        "name": "Wrapped SUI",
+        "symbol": "WSUI",
+        "decimals": 8,
+        "token_type": {
+            "type": "0xced3e98a47279b4d39a75fa8da867e2e8383d5d8ce7e59b2964a9469616a761b::coin::T"
+        }
+    },
+    {
+        "name": "SeedzCoin",
+        "symbol": "SEEDZ",
+        "decimals": 6,
+        "token_type": {
+            "type": "0x5d410456c28307fd31439c1658b5e6b41f4ba868d63e03598c1ddb4a7b29449::asset::SeedzCoin"
+        }
+    },
+    {
+        "name": "APTELON",
+        "symbol": "APT",
+        "decimals": 9,
+        "token_type": {
+            "type": "0x44992760ff82b4e88c94db72115435dfa957f4fef79ccc8b53df08acee8e5d74::APTELON::APTELON"
+        }
+    },
+    {
+        "name": "FantasyGold",
+        "symbol": "FGC",
+        "decimals": 6,
+        "token_type": {
+            "type": "0xa4c5c1f5d28f13b6da2de8cb76708a5fbeca5d6c5fe592ee1b062a91f14d94b7::FGC::Fgc"
+        }
+    },
+    {
+        "name": "Bonk",
+        "symbol": "Bonk",
+        "decimals": 5,
+        "token_type": {
+            "type": "0x2a90fae71afc7460ee42b20ee49a9c9b29272905ad71fef92fbd8b3905a24b56::coin::T"
+        }
     }
 ]
